@@ -15,12 +15,12 @@
         <span>Size: <span id="valor"></span> character</span>
         <input type="range" id="slider" class="slider" min="5" max="25" value="15" title="range">
 
-        <button id="button" class="button-cta" title="button">Generate Password</button>
+        <button id="button" class="button-cta" title="button" onclick="generatePassword()">Generate Password</button>
     </main>
 
-    <div id="container-password" class="container-password hide">
+    <div id="container-password" class="container-password hide" onclick="copyPassword()">
         <span class="title">Your generated password is:</span>
-        <span id="password" class="password">120217</span>
+        <span id="password" class="password"></span>
         <span class="tooltip">Click to paste</span>
     </div>
 
